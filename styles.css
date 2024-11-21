@@ -28,12 +28,24 @@ img{
     object-fit: cover;
     border-radius: 6px;
 }
+@media (max-width: 375px){
+    img{
+        border-radius: 0px;
+    }
+}
 h1{
     font-family: var(--ff1);
     color: var(--clr-stone900);
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
+    margin-top: 0;
+}
+@media (max-width: 375px){
+    h1{
+        font-size: 32px;
+    }
+    
 }
 h2{
     font-family: var(--ff1);
@@ -42,11 +54,24 @@ h2{
     font-weight: 500;
     margin-bottom: 10px;
 }
+@media (max-width: 375px){
+    h2{
+        font-size: 24px;
+    }
+    
+}
 h3{
     font-family: var(--ff2);
     font-size: 10px;
     color: var(--clr-rose800);
     margin: 0;
+    margin-bottom: 9px;
+}
+@media (max-width: 375px){
+    h3{
+        font-size: 17px;
+    }
+    
 }
 p{
     font-family: var(--ff2);
@@ -55,6 +80,12 @@ p{
     line-height: 150%;
     color: var(--clr-stone600);
     margin-bottom: 16px;
+}
+@media (max-width: 375px){
+    p{
+        font-size: 14px;
+    }
+    
 }
 ul{
     margin: 0;
@@ -73,6 +104,14 @@ li{
     margin-top: 5px;
     padding-left: 5px;
 }
+@media (max-width: 375px){
+    li{
+        font-size: 14px;
+        width: 270px;
+        line-height: 150%;
+    }
+    
+}
 span{
     font-weight: bold;
 }
@@ -84,23 +123,64 @@ hr{
     border-color: rgb(234, 234, 234);
 }
 
+
+
 /*other*/
 .hero{
     min-height: 100vh;
     display: grid;
     place-items: center;
 }
+.image-container{
+    border-radius: 10px 10px 0px 0px;
+    padding: 22px;
+    padding-bottom: 0;
+    width: 372px;
+    min-width: 372px;
+    background-color: white;
+}
+@media (max-width: 375px){
+    .image-container{
+        width: 328px;
+        min-width: 328px;
+        padding: 0;
+        border-radius: 0px;
+    }
+}
 .center-container{
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     padding: 22px;
     width: 372px;
     min-width: 372px;
     background-color: white;
 }
+@media (max-width: 375px){
+    .center-container{
+        width: 328px;
+        min-width: 328px;
+        padding: 25px;
+    }
+}
+/*.item-container{
+    width: 328px;
+    min-width: 328px;
+}
+@media (max-width: 375px){
+    .item-container{
+        width: 270px;
+        min-width: 270px;
+    }
+}*/
 .preparation-time{
     padding: 16px;
     background-color: var(--clr-rose50);
     border-radius: 6px;
+}
+@media (max-width: 375px){
+    .preparation-time{
+        padding: 22px;
+    }
+    
 }
 .list-prep::marker{
     color: var(--clr-rose800);
@@ -116,6 +196,7 @@ hr{
 .nutrition{
     color: var(--clr-brown800);
     font-weight: bold;
+    margin-left: 123px;
 }
 .nutrition-inf{
     margin-left: 16px;
